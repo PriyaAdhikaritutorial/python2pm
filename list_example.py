@@ -34,6 +34,8 @@
 # thislist.pop()
 # print(thislist)
 
+
+# delete(del)
 # a = ["yellow", "pink", "red"]
 # del a[2]
 # print(a)
@@ -46,6 +48,13 @@
 # new=data.copy()
 # print(new)
 
+# datalist = ["copy", "book", "nobles"]
+# datalist.sort()
+# print(datalist)
+
+# datlist = ["pencil", "eraser", "pen"]
+# datlist.reverse()
+# print(datlist)
 
 
 
