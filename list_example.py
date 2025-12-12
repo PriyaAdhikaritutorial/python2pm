@@ -57,6 +57,51 @@
 # print(datlist)
 
 
+# data = {
+# "name": "priya",
+# "age": 20,
+# "contact": 9800724426,
+# "city": "butwal"
+# }
+# print(data["name"], data["age"])
 
+# data = [
+#     {"name": "ram", "age": 20},
+#     {"name": "sita", "age": 22},
+#     {"name": "gita", "age": 24},
+# ]
+# print(data[0]["name"])
 
+# data = [
+#     {"name": "ram", "age": 20},
+#     {"name": "sita", "age": 22},
+#     {"name": [{"username": "admin"}]},
+# ]
+# print(data[2]["name"] [0]["username"]) 
 
+# data = [
+#     {"name": "ram", "age": 20},
+#     {"name": "sita", "age": 22},
+#     {"name": [{"username": "admin", "address": ["ktm"]}]},
+# ]
+# print(data[2]["name"] [0]["address"][0])
+
+# data = [
+#     [{"name": "ram", "city": "ktm"}],
+#     [{"name": "sita", "city": "butwal"}],
+    
+# ]
+# print(data[0][0]["name"], data[1][0]["name"]) 
+
+# data ={
+#     "user":[
+#         {"name": "ram", "address": "ktm"},
+#     ],
+#     "students":[
+#         {"name": "sita", "address": "btl"},
+#     ]
+
+# } 
+# print(data["user"] [0] ["name"], data["students"][0]["name"])
+
+    
