@@ -104,4 +104,38 @@
 # } 
 # print(data["user"] [0] ["name"], data["students"][0]["name"])
 
-    
+
+# username= 'admin'
+# password='admin123'
+
+# if username=='admin' and password=='admin123':
+#     print("login sucessful")
+# else:
+#     print("login failed")
+
+
+print("=========================welcome to computer bazar")
+print("1. Dell(Rs:20000) 2. HP(Rs:25000) 3. Apple(Rs:50000) 4. Lenovo(Rs:30000)" )
+option = int(input("Enter quantity:"))
+if option==1:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 20000*qu
+    print(f"total amount:{total}")
+elif option==2:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 25000*qu
+    print(f"total amount:{total}")
+elif option==3:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 50000*qu
+    print(f"total amount:{total}")
+elif option==4:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 30000*qu
+    print(f"total amount:{total}")
+else:
+    print("Invalid option")
