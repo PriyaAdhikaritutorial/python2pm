@@ -141,25 +141,104 @@
 #     print("Invalid option")
   
 
-print("=================welcome to ATM========")
-pin =int(input("Enter your pin: "))
-if pin==1234:
-    amount=10000
-    print("1. withdraw  2. Balance Enquiry ")
-    option =int(input("select your option: "))
-    if option==1:
-        namount=int(input("Enter amount to withdraw: "))
-        if namount>amount:
-            print("insufficiemt balance")
-        else:
-            wamount= amount- namount
-            print(f"please collect your cash")
-            print(f"withdraw amount is :{namount}")
-            print(f"your remaining bakance is  :{wamount}")
-    elif option==2:
-        print(f"your balance is : {amount}")
-    else:
-        print("Invalid option")
-else:
-    print("Incorrect pin")
+# print("=================welcome to ATM========")
+# pin =int(input("Enter your pin: "))
+# if pin==1234:
+#     amount=10000
+#     print("1. withdraw  2. Balance Enquiry ")
+#     option =int(input("select your option: "))
+#     if option==1:
+#         namount=int(input("Enter amount to withdraw: "))
+#         if namount>amount:
+#             print("insufficiemt balance")
+#         else:
+#             wamount= amount- namount
+#             print(f"please collect your cash")
+#             print(f"withdraw amount is :{namount}")
+#             print(f"your remaining bakance is  :{wamount}")
+#     elif option==2:
+#         print(f"your balance is : {amount}")
+#     else:
+#         print("Invalid option")
+# else:
+#     print("Incorrect pin")
     
+print("=========================welcome to computer bazar================")
+print("1. Dell(Rs:20000) 2. Toshiba(Rs:25000) 3. MAC(Rs:50000) " )
+option = int(input("Enter quantity:"))
+if option==1:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 20000*qu
+    print(f"total amount:{total}")
+elif option==2:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 25000*qu
+    print(f"total amount:{total}")
+elif option==3:
+    qu= int(input("Enter quantity: "))
+    name= input("Enter your name: ")
+    total= 50000*qu
+    print(f"total amount:{total}")
+else:
+    print("Invalid option")
+    exit() 
+
+print("Delivery option:")
+print("1. Home (Rs:1000)")
+print("2. Pickup (Free)")
+delivery = int(input("Enter delivery option: "))
+
+if delivery == 1:
+    delivery_charge = 1000
+else:
+    delivery_charge = 0
+
+print("\nPacking option:")
+print("1. Plastic bag (Rs:1000)")
+print("2. Bag (Rs:2000)")
+print("3. Gift box (Rs:5000)")
+packing = int(input("Enter packing option: "))
+
+    
+
+if packing == 1:
+    packing_charge = 1000
+elif packing == 2:
+    packing_charge = 2000
+else:
+    packing_charge = 5000
+
+
+print("\nLocation:")
+print("1. KTM (13% tax)")
+print("2. BKT (Free)")
+print("3. LTP (Free)")
+location = int(input("Enter location: "))
+
+username = input("\nEnter username: ")
+quantity = int(input("Enter quantity: "))
+subtotal = packing_charge* quantity
+tax = 0
+
+ 
+if location == 1:
+    tax = subtotal * 0.13
+
+grand_total = subtotal + delivery_charge + packing_charge + tax
+
+
+print("\n=========INVOICE =========")
+print("Customer name:", name)
+print("Quantity:", quantity)
+print("Subtotal: Rs", subtotal)
+print("Delivery Charge: Rs", delivery_charge)
+print("Packing Charge: Rs", packing_charge)
+print("Tax Amount: Rs", tax)
+print("Grand Total: Rs", grand_total)
+print("========================")
+
+
+
+  
