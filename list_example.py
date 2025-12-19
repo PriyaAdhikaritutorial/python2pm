@@ -217,7 +217,7 @@ print("2. BKT (Free)")
 print("3. LTP (Free)")
 location = int(input("Enter location: "))
 
-username = input("\nEnter username: ")
+customername = input("\nEnter customername: ")
 quantity = int(input("Enter quantity: "))
 subtotal = packing_charge* quantity
 tax = 0
