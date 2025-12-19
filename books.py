@@ -133,13 +133,15 @@
 #     else:
 #        print(x, z, y)
 
+
+
 # if x > y:
 #    if y > z:
 #       print(x,y,z)
 #    else:
-#       print(z,x,y)
-# esle:
-# print()
+#     print(z,x,y)
+# else:
+#     print(z,x,y)
 
 
 # a = 200
