@@ -187,4 +187,133 @@
 # else:
 #     print("is not eligible")
 
-        
+# party(age 18< 40>)
+# drinks (age 18<40)
+# 35<40 whisky
+
+# print ("---------Party--------") 
+
+# print ("age = 18")
+# print("age = 40")
+# if 18>40:
+#     print("The people whose age 40 are able to enter in the party")
+# else:
+#     print("The people whose age 18 is not able to enter in the party")
+
+
+# print("------Drinks------")
+
+# print("age = 18")
+# print("age = 40")
+# if 18 < 40: 
+#  print("The people whose age 18 allowed to drink soft drinks")
+# else:
+#    print("The people whose age 18 do not allowed to drink hard drinks")
+
+# print("--------Whisky-------")
+
+# print("age = 18")
+# print("age = 40")
+# if 40 > 18:
+#    print("The people whose age is 40 are allowed to drink whisky")
+# else:
+#    print("The people whose age is 18 are not allowed to drink whisky ") 
+
+
+
+
+# match case
+# lang = 'english'
+
+# match lang:
+#    case 'nepal':
+#       print("Namaste")
+#    case 'english':
+#       print("Hello")
+#    case _:
+#       print("Invalid language")
+
+
+
+
+# a = int(input("Enter the number a:"))
+# b = int(input("Enter the number b:")) 
+# operator =input("Enter the operator"("+, -, /, *"))
+# match operator:
+#   case'+':
+#     print(a+b) 
+#   case'-':
+#     print(a-b)
+#   case'/':
+#     print(a/b) 
+#   case'*':
+#       print(a*b)
+
+
+
+
+# student = input("Enter student Id")
+# name = input("Enter student name")
+# print("Five subjects marks")
+
+# nep = int(input("Enter nepali marks"))
+# eng =  int(input("Enter engish marks"))
+# soc = int (input("Enter social marks"))
+# sci = int (input("Enter science marks"))
+# math =int(input("Enter math marks"))
+
+# total= nep+eng+math+sci+soc
+# per = total/5 
+# print('total',total)
+# print('percentage',per)
+# if per >35 and per <50:
+#    print('c')
+# elif per > 50 and per < 70:
+#    print('b')
+# elif per > 70 and per < 90:
+#    print('a')
+# elif per > 90 and  per < 100:
+#    print('a+')
+# else:
+#    print('fail')
+
+
+
+
+# data= ['alexa','olivia','nooma','sidney']
+# name = input("Enter name")
+
+# if name in data:
+#    print(f"{name} is found")
+# else:
+#    print(f"{name} is found")
+
+
+
+# wap to enter employe id,name, and salary.
+# 100000> 20% bous
+# 80-100000 > 15%
+# 50-100000> 10%
+# below 50000> 5%
+
+
+emp_id = int(input("Enter Employee ID: "))
+name = input("Enter Employee Name: ")
+salary = float(input("Enter Salary: "))
+
+
+if salary > 100000:
+    bonus = salary * 0.20
+elif 80000 <= salary <= 100000:
+    bonus = salary * 0.15
+elif 50000 <= salary < 80000:
+    bonus = salary * 0.10
+else:
+    bonus = salary * 0.05
+
+total_salary = salary + bonus
+
+
+
+
+
