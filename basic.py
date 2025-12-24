@@ -1,52 +1,52 @@
 # print("Hello python")
 # print("It's a python code to say hello")
-a = int(20) 
-print(type(a))
-
-b = ["apple", "mango", "cherry"] 
-print(type(b))
-
-# a =  float(10.0)
+# a = int(20) 
 # print(type(a))
 
-b = frozenset({"banana",  "apple", "orange"})
-print(b)
-print(type(b))
+# b = ["apple", "mango", "cherry"] 
+# print(type(b))
 
-a = "priya adhikari"
-print(a[1:6])
+# # a =  float(10.0)
+# # print(type(a))
 
-# slicing string
-d = "how are you"
-print(d[:5])
+# b = frozenset({"banana",  "apple", "orange"})
+# print(b)
+# print(type(b))
 
-# upper case
-datalist = "hello python"
-print(datalist.upper())
+# a = "priya adhikari"
+# print(a[1:6])
 
-# lower case
-datalist = "HELLO PYTHON"
-print(datalist.lower())
+# # slicing string
+# d = "how are you"
+# print(d[:5])
 
-# replace
-datalist = "hello"
-print(datalist.replace("h", "m"))
+# # upper case
+# datalist = "hello python"
+# print(datalist.upper())
 
-# String Concatenation (if we don't need a gap between "hello python" we have to write a code like this )
-a = "hello"
-b = "python"
-c = a + b
-print(c)
+# # lower case
+# datalist = "HELLO PYTHON"
+# print(datalist.lower())
 
-# String Concatenation (if we need a gap between "hello python" we have to write a code like this) 
-a = "Hello"
-b = "World"
-c = a + " " + b
-print(c)
+# # replace
+# datalist = "hello"
+# print(datalist.replace("h", "m"))
 
-# formatting string (To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.)
-age = 20
-txt= f"My name is Priya, I am {age}"
-print(txt)
+# # String Concatenation (if we don't need a gap between "hello python" we have to write a code like this )
+# a = "hello"
+# b = "python"
+# c = a + b
+# print(c)
+
+# # String Concatenation (if we need a gap between "hello python" we have to write a code like this) 
+# a = "Hello"
+# b = "World"
+# c = a + " " + b
+# print(c)
+
+# # formatting string (To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.)
+# age = 20
+# txt= f"My name is Priya, I am {age}"
+# print(txt)
 
   

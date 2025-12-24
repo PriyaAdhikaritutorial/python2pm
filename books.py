@@ -1,4 +1,4 @@
-# user = [
+ # user = [
 # {"username": "admin", "password": "admin002"},
 # {"username": "hari", "password": "hari002"}
 # ]
@@ -297,21 +297,141 @@
 # below 50000> 5%
 
 
-emp_id = int(input("Enter Employee ID: "))
-name = input("Enter Employee Name: ")
-salary = float(input("Enter Salary: "))
+# emp_id = int(input("Enter Employee ID: "))
+# name = input("Enter Employee Name: ")
+# salary = float(input("Enter Salary: "))
 
 
-if salary > 100000:
-    bonus = salary * 0.20
-elif 80000 <= salary <= 100000:
-    bonus = salary * 0.15
-elif 50000 <= salary < 80000:
-    bonus = salary * 0.10
-else:
-    bonus = salary * 0.05
+# if salary > 100000:
+#     bonus = salary * 0.20
+# elif 80000 <= salary <= 100000:
+#     bonus = salary * 0.15
+# elif 50000 <= salary < 80000:
+#     bonus = salary * 0.10
+# else:
+#     bonus = salary * 0.05
 
-total_salary = salary + bonus
+# total_salary = salary + bonus
+
+
+
+
+# data = {
+#     'name': "ram",
+#     'address': "kathmandu",
+#     "contact":{
+#         'phone': 98758,
+#         'email':'xyz@1325.com'
+#     }
+
+# }
+# print(data['name'])
+# print(data['contact']['email'])
+
+
+# users = [
+#     {'username': 'alexa', 'password': 'alexa123'},
+#     {'username': 'admin', 'password': 'admin1234'}
+
+# ]
+
+# print(users[0]['username'])
+
+# username = input("Enter usename:")
+# password = input("Enter password:")
+
+# if username==users[0]['username'] and password==users[0]['password']:
+#     print("welcome")
+# elif username==users[1]['username'] and password==users[1]['password']:
+#     print("welcome")
+# else:
+#     print("login failed ")
+
+
+
+# users = [
+#     {'username': 'alexa', 'password': 'alexa123'}
+#     {'username': 'admin', 'password': 'admin1234'}
+
+# ]
+
+# books =[
+#     {'title':'python and django', 'price': 20000},
+#     {'title': 'javascript and reactjs', 'price': 15000}
+# ]
+# print("=========Welcome to books store===========")
+# username = input("Enter the username: "),
+# password = input("Enter the password: ")
+# if username==users[0]['username'] and password==users[0]['password']:
+#     print("welcome")
+# elif username==users[1]['username'] and password==users[1]['password']:
+#     print("welcome")
+# else:
+#     print("login failed ")
+
+# if choice == '1':
+#         print("\nAvailable Books:")
+#         for book in books:
+#             print(book['title'], "-", book['price'])
+
+        
+#     elif choice == '2':
+#             title = input("Enter book title: ")
+#             price = int(input("Enter book price: "))
+
+#             books.append({'title': title, 'price': price})
+#             print("Book added successfully")
+
+        
+#     elif choice == '3':
+#             title = input("Enter book title to delete: ")
+
+#             found = False
+#             for book in books:
+#                 if book['title'] == title:
+#                     books.remove(book)
+#                     found = True
+#                     print(" Book deleted successfully")
+#                     break
+
+#             if not found:
+#                 print(" Book not found")
+ 
+
+
+
+# n = 1
+
+# while n<=5:
+#     print(n)
+#     n+=1
+
+
+n = 5
+
+while n>=1:
+    print(n)
+    n-=1
+
+
+
+# name = "priya adhikari"
+# n = 1
+# while n<=10:
+#     print(name)
+#     n+=1
+
+
+# n =1
+
+# while n<=10:
+#     if n%2!=0:
+#         print(n)
+#         n+=1
+
+
+
+
 
 
 
