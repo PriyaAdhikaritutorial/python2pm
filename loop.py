@@ -108,14 +108,66 @@
 
 
 
-a= int(input("Enter the number of students :"))
-numbers=[]
-x=0
+# a= int(input("Enter the number of students :"))
+# numbers=[]
+# x=0
 
-while x<a:
-    n=int(input("Enter number:"))
-    if n%2==0:
-       numbers.append(n)
-    x+=1
+# while x<a:
+#     n=int(input("Enter number:"))
+#     if n%2==0:
+#        numbers.append(n)
+#     x+=1
 
-print("Even number list:",numbers)         
+# print("Even number list:",numbers)
+
+
+# for x in range (1,11):
+#     print(x, end=" ")
+
+# for x in range (10, 1,-1):
+#     print(x, end=" ")
+
+
+# data=['ram','sita','gita','hari']
+# for name  in data:
+#     print(name)
+
+
+
+# numbers=[1,2,3,6,7,9,11,12,14,15,16] 
+# even=0  
+# for n in numbers:
+#     if n%2==0:
+#         print(n)
+
+
+# numbers=[1,3,6,7,9,11,12,15,17]
+# for n in numbers:
+#     if n==3 or n==7 or n==9 or n==15 or n==16:
+#         print(n)
+        
+
+
+data=['ram','sita','gita','hari','shyam']
+for names in data:
+         print(data[0], end=" ")
+
+data=['ram','sita','gita','hari','shyam']
+for names in data:
+        print(data[1],end=" ")   
+
+
+for n in range(1,16):
+        if n<=5:
+                print("Ram")
+        elif n>5 and n <=10:  
+                print("Sita")
+        else:
+                print("Gita")  
+
+
+x = 1
+while x<=10:
+    print("8 x",x,"=",x*8)
+    x+=1                                  
+ 
