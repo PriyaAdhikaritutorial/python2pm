@@ -373,76 +373,122 @@ books = [
 # 4.update
 # 5.exit
 
-while True:
-    print("~~~~~~~~~~~~~~Welcome to Book Store~~~~~~~~~~~~~~")
-    print("1. Add Book")
-    print("2. View Books")
-    print("3. Delete Book")
-    print("4. Update Book")
-    print("5. Exit")
+# while True:
+#     print("~~~~~~~~~~~~~~Welcome to Book Store~~~~~~~~~~~~~~")
+#     print("1. Add Book")
+#     print("2. View Books")
+#     print("3. Delete Book")
+#     print("4. Update Book")
+#     print("5. Exit")
 
-    choice = int(input("Enter your choice: "))
+#     choice = int(input("Enter your choice: "))
 
-    # 1. Add Book
-    if choice == 1:
-        bid = int(input("Enter book ID: "))
-        title = input("Enter book title: ")
-        price = float(input("Enter book price: "))
-        quantity = int(input("Enter book quantity: "))
+   
+#     if choice == 1:
+#         bid = int(input("Enter book ID: "))
+#         title = input("Enter book title: ")
+#         price = float(input("Enter book price: "))
+#         quantity = int(input("Enter book quantity: "))
 
-        book = {
-            'bid': bid,
-            'title': title,
-            'price': price,
-            'quantity': quantity
-        }
+#         book = {
+#             'bid': bid,
+#             'title': title,
+#             'price': price,
+#             'quantity': quantity
+#         }
 
-        books.append(book)
-        print("Book added successfully!")
+#         books.append(book)
+#         print("Book added successfully!")
 
-    # 2. View Books
-    elif choice == 2:
-        print("--- Book List ---")
-        for book in books:
-            print(book)
+    
+#     elif choice == 2:
+#         print("--- Book List ---")
+#         for book in books:
+#             print(book)
 
-    #  3. Delete Book
-    elif choice == 3:
-        bid = int(input("Enter book ID to delete: "))
-        for book in books:
-            if book['bid'] == bid:
-                books.remove(book)
-                print("Book deleted successfully!")
-                break
-        else:
-            print("Book not found!")
+    
+#     elif choice == 3:
+#         bid = int(input("Enter book ID to delete: "))
+#         for book in books:
+#             if book['bid'] == bid:
+#                 books.remove(book)
+#                 print("Book deleted successfully!")
+#                 break
+#         else:
+#             print("Book not found!")
 
-    # 4. Update Book
-    elif choice == 4:
-        bid = int(input("Enter book ID to update: "))
-        for book in books:
-            if book['bid'] == bid:
-                book['title'] = input("Enter new title: ")
-                book['price'] = float(input("Enter new price: "))
-                book['quantity'] = int(input("Enter new quantity: "))
-                print("Book updated successfully!")
-                break
-        else:
-            print("Book not found!")
+   
+#     elif choice == 4:
+#         bid = int(input("Enter book ID to update: "))
+#         for book in books:
+#             if book['bid'] == bid:   
+#                 book['title'] = input("Enter new title: ")
+#                 book['price'] = float(input("Enter new price: "))
+#                 book['quantity'] = int(input("Enter new quantity: "))
+#                 print("Book updated successfully!")
+#                 break
+#         else:
+#             print("Book not found!")
 
-    # 5. Exit
-    elif choice == 5:
-        print("Thank you for using Book Store!")
-        break
+    
+#     elif choice == 5:
+#         print("Thank you for using Book Store!")
+#         break
 
-    else:
-        print("Invalid choice! Please try again.")
-
-
+#     else:
+#         print("Invalid choice! Please try again.")
 
 
 
+   
 
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print("*",end="")
+    # print()
+
+# for i in range(6,0,-1):
+#     for k in range(1,i-1):
+#         print("*",end="")
+#     print()    
+
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5 
+
+# for i in range (1,5):
+#     for j in range(1,i+1):
+#         print(j ,end=" ")
+#     print()    
+
+
+
+# 0
+# 0 1
+# 0 1 2
+# 0 1 2 3
+# 0 1 2 3 4
+
+# for i in range(0,5):
+#     for j in range(0, i+1):
+#         print(j,end=" ")
+#     print()        
+
+
+# nepal flag
+
+for i in range(0,6):
+    for j in range(0, i+1):
+        print(j, end=" ")
+    print()  
+
+for i in range(0,7):
+    for j in range(0, i+1):
+        print(j, end=" ")
+    print()     
 
 
  
