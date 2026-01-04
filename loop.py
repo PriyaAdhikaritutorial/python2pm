@@ -480,15 +480,38 @@ books = [
 
 # nepal flag
 
-for i in range(0,6):
-    for j in range(0, i+1):
-        print(j, end=" ")
-    print()  
+# for i in range(0,6):
+#     for j in range(0, i+1):
+#         print("*",end=" ")  
+#     print()
 
-for i in range(0,7):
-    for j in range(0, i+1):
-        print(j, end=" ")
-    print()     
+# for i in range(0,7):
+#     for j in range(0, i+1):
+#         if i==5:
+#             print("*","moon","*", end=" ")
+#             break
+#         print("*",end="")
+#     print()  
+
+# for i in range(0,2):
+#         print("*",)  
+# print()  
+
+data[
+    {12,13,14,15},
+    {16,17,18,19},
+    {20,21,22,23,},
+]
+# [48,51,54,57]
 
 
- 
+result = []
+for i in range(len(data[0])):
+    total = 0
+    for row in data:
+        total += row[i]
+    result.append(total)
+
+print(result)
+
+
