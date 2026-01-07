@@ -348,10 +348,10 @@
 
 
 
-books = [
-    {'bid':1, 'title':"python and django", 'price':2000, 'quantity':5},
-    {'bid':2, 'title':"javascript", 'price':3000, 'quantity':3},
-]
+# books = [
+#     {'bid':1, 'title':"python and django", 'price':2000, 'quantity':5},
+#     {'bid':2, 'title':"javascript", 'price':3000, 'quantity':3},
+# ]
 # num=int(input("Enter the number of books: "))
 # x=1
 # while x <=num:
@@ -497,21 +497,21 @@ books = [
 #         print("*",)  
 # print()  
 
-data[
-    {12,13,14,15},
-    {16,17,18,19},
-    {20,21,22,23,},
-]
+# data[
+#     {12,13,14,15},
+#     {16,17,18,19},
+#     {20,21,22,23,},
+# ]
 # [48,51,54,57]
 
 
-result = []
-for i in range(len(data[0])):
-    total = 0
-    for row in data:
-        total += row[i]
-    result.append(total)
+# result = []
+# for i in range(len(data[0])):
+#     total = 0
+#     for row in data:
+#         total += row[i]
+#     result.append(total)
 
-print(result)
+# print(result)
 
 
