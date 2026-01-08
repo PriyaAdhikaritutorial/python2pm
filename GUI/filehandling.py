@@ -48,50 +48,51 @@
 
 
 
-file=open("GUI/student_marks.txt", "w")
-file.write("subjects:nepali, math, science, social, english")
-file.write("student marksheet\n")
+# file=open("GUI/student_marks.txt", "w")
+# file.write("subjects:nepali, math, science, social, english")
+# file.write("student marksheet\n")
 
-nepali=int(input("Enter the marks of nepali subject: "))
-science=int(input("Enter the marks of science subject: "))
-social=int(input("Enter the marks of social subject: "))
-english=int(input("Enter the marks of english subject: "))
-math=int(input("Enter the marks of math subject: "))
+# nepali=int(input("Enter the marks of nepali subject: "))
+# science=int(input("Enter the marks of science subject: "))
+# social=int(input("Enter the marks of social subject: "))
+# english=int(input("Enter the marks of english subject: "))
+# math=int(input("Enter the marks of math subject: "))
 
-total=nepali+science+math+english+social
-percentage=total/5
-print("Total=", total)
-print("Percentage=", percentage)
+# total=nepali+science+math+english+social
+# percentage=total/5
+# print("Total=", total)
+# print("Percentage=", percentage)
 
-if percentage > 70:
-    grade= "A+"
-elif  percentage > 60:
-    grade= "A"
-elif  percentage > 50:
-    grade= "B"
-else:
-      grade= "c"
+# if percentage > 70:
+#     grade= "A+"
+# elif  percentage > 60:
+#     grade= "A"
+# elif  percentage > 50:
+#     grade= "B"
+# else:
+#       grade= "c"
 
-file.write(f"nepali : {nepali}\n")
-file.write(f"english : {english}\n")
-file.write(f"social : {social}\n")
-file.write(f"science : {science}\n")
-file.write(f"math : {math}\n")
-
-
-file.write(f"total :{total}\n")
-file.write(f"percentage :{percentage}\n")
-file.write(f"grade :{grade}\n")
-file.write(f"grade: {grade}\n")
-file.close()   
-print("data of student_marks written sucessfully") 
+# file.write(f"nepali : {nepali}\n")
+# file.write(f"english : {english}\n")
+# file.write(f"social : {social}\n")
+# file.write(f"science : {science}\n")
+# file.write(f"math : {math}\n")
 
 
-file.close()
-print("\ntotal=",total)
-print("percentage=", percentage)
-print("grade=", grade)
-print("Data is written to student_marks sucessfully")
+# file.write(f"total :{total}\n")
+# file.write(f"percentage :{percentage}\n")
+# file.write(f"grade :{grade}\n")
+# file.write(f"grade: {grade}\n")
+# file.close()   
+# print("data of student_marks written sucessfully") 
+
+# OR WRITE THIS CODE :
+
+# file.close()
+# print("\ntotal=",total)
+# print("percentage=", percentage)
+# print("grade=", grade)
+# print("Data is written to student_marks sucessfully")
 
 
 # file=open("GUI/students_marks.txt", "r")
@@ -99,8 +100,32 @@ print("Data is written to student_marks sucessfully")
 # print(file.readlines())
 # file.close()
 
-# file.write(str(464656))
-# import os
-# import system
-# import glob
+# file.write(str(464656)) to print numbers becoz it does'nt print out directly numbers.
+
+# import os: os is a built-in Python module used to interact with the operating system.
+# import system: This is also just a comment, not actual code, It helps you find files using patterns.
+# import glob:
+
+
+file=open("facebook_login.txt","w")
+file.write("username: Priya Adhikari\n")
+file.write("password: priy@221")
+file.write("login please")
+file.close()
+print("Data is written successfully" )
+
+
+user_name="Priya Adhikari"
+pass_word='priy@221'
+username=input("Enter the username: ")
+password=input("Enter the password: ")
+
+if username==user_name and password==pass_word:
+  print("login succesfully")
+else:
+    print("unable to login")
+
+
+file.close()
+print("Data is written sucessfully Thank You!")
 
