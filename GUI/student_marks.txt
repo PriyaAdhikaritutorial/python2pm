@@ -1,0 +1,10 @@
+subjects:nepali, math, science, social, englishstudent marksheet
+nepali : 66
+english : 77
+social : 87
+science : 76
+math : 57
+total :363
+percentage :72.6
+grade :A+
+grade: A+

@@ -1,0 +1,1 @@
+subjects:nepali, math, science, social, english
