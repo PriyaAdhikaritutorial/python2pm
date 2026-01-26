@@ -139,55 +139,55 @@
 
 
 
-import sqlite3
-conn=sqlite3.connect("database/ecommerce.sqlite3")
-mycrs= conn.cursor()
-def create_category_table():
-    table= """
-    CREATE TABLE IF NOT EXISTS category(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL
-    )
-    """
+# import sqlite3
+# conn=sqlite3.connect("database/ecommerce.sqlite3")
+# mycrs= conn.cursor()
+# def create_category_table():
+#     table= """
+#     CREATE TABLE IF NOT EXISTS category(
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL
+#     )
+#     """
      
-    mycrs.execute(table)
-    conn.commit()
-def create_product_table():
-    table="""
-    CREATE TABLE IF NOT EXISTS products(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    cat_id INTEGER NOT NULL,
-    title TEXT NOT NULL,
-    price INTEGER NOT NULL, 
-    FOREIGN KEY (cat_id) REFERENCES  category(id)
-    )
-    """
-    mycrs.execute(table)
-    conn.commit()
-create_category_table()
-create_product_table()
+#     mycrs.execute(table)
+#     conn.commit()
+# def create_product_table():
+#     table="""
+#     CREATE TABLE IF NOT EXISTS products(
+#     id INTEGER PRIMARY KEY AUTOINCREMENT,
+#     cat_id INTEGER NOT NULL,
+#     title TEXT NOT NULL,
+#     price INTEGER NOT NULL, 
+#     FOREIGN KEY (cat_id) REFERENCES  category(id)
+#     )
+#     """
+#     mycrs.execute(table)
+#     conn.commit()
+# create_category_table()
+# create_product_table()
 
-def cat_insert(name):
-    sql=f"INSERT INTO category(name) VALUES('{name})"
-    mycrs.execute(sql)
-    conn.commit()
-    print("category inserted")
+# def cat_insert(name):
+#     sql=f"INSERT INTO category(name) VALUES('{name})"
+#     mycrs.execute(sql)
+#     conn.commit()
+#     print("category inserted")
 
-    cat_insert("laptop")
-    cat_insert("mobile") 
-    cat_insert("toshiba") 
+#     cat_insert("laptop")
+#     cat_insert("mobile") 
+#     cat_insert("toshiba") 
 
-def create_user_table():
-    table= """
-    CREATE TABLE IF NOT EXISTS users(
-    uid INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE  NOT NULL,
-    address TEXT NOT NULL
-    )
-    """
-    mycrs.execute(table) 
-    conn.commit() 
+# def create_user_table():
+#     table= """
+#     CREATE TABLE IF NOT EXISTS users(
+#     uid INTEGER PRIMARY KEY AUTOINCREMENT,
+#     name TEXT NOT NULL,
+#     email TEXT UNIQUE  NOT NULL,
+#     address TEXT NOT NULL
+#     )
+#     """
+#     mycrs.execute(table) 
+#     conn.commit() 
 
 # create_user_table()
 # create_category_table()
@@ -206,27 +206,22 @@ def create_user_table():
 # insert_user(3, "Gita", "gita@gmail.com", "Bhaktapur")
 # insert_user(4, "Rita", "rita@gmail.com", "Birjung")
      
-def create_Order_table():
-    table= """
-    CREATE TABLE IF NOT EXISTS orders(
-    oid INTEGER PRIMARY KEY AUTOINCREMENT,
-    product_id INTEGER NOT NULL,
-    user_id INTEGER NOT NULL,
-    quantity INTEGER NOT NULL
-    )
-    """
-    mycrs.execute(table) 
-    conn.commit() 
+# def create_Order_table():
+#     table= """
+#     CREATE TABLE IF NOT EXISTS orders(
+#     oid INTEGER PRIMARY KEY AUTOINCREMENT,
+#     product_id INTEGER NOT NULL,
+#     user_id INTEGER NOT NULL,
+#     quantity INTEGER NOT NULL
+#     )
+#     """
+#     mycrs.execute(table) 
+#     conn.commit() 
 
-create_user_table()
-create_category_table()    
-create_product_table()
-create_Order_table()
-
-
-
-
-
+# create_user_table()
+# create_category_table()    
+# create_product_table()
+# create_Order_table()
 
 
 
@@ -247,3 +242,73 @@ create_Order_table()
 # oid, product_id, user_id, quantity
 # 1,1,2,5
 # 2,3,2,10
+
+
+# what is oop: Python is an object-oriented language, allowing you to structure your code using classes and objects for better organization and reusability.
+# what is method:
+#
+#  what is class:in Python, a class is a blueprint or template used to create objects.
+# It defines the properties (variables) and behaviors (methods/functions) that objects will have.
+# 
+# what is inheritence:Inheritance allows us to define a class that inherits all the methods and properties from another class.
+# Parent class is the class being inherited from, also called base class.
+# Child class is the class that inherits from another class, also called derived class.
+# 
+# static methods:A static method is a method inside a class that does not use the object (self) or the class (cls).
+# 
+# class decorators:In Python, a decorator is a special function that modifies or extends the behavior of another function (or class) without changing its actual code.
+
+
+
+
+# class college:
+#     x=10
+#     def info(self):
+#         print("This is a college info")
+#     def add(self, a,b):
+#         print(a+b)
+
+
+# c1= college()
+# print(c1.x)
+# c1.info()
+# c1.add(10,20)
+
+
+# to make a calculator
+# class calculator:
+#   def add(self, a,b):
+#       print(a+b)
+#   def sub(self, a,b):
+#       print(a-b)
+#   def mul(self, a,b):
+#       print(a*b)
+#   def div(self, a,b):
+#       print(a/b)
+
+# calc= calculator()
+# calc.add(10,20)
+# calc.sub(20,10)
+# calc.mul(10,20)
+# calc.div(20,4)             
+
+
+class CRUD:
+    data=['ram','sita']
+
+    def show(self):
+        print(self.data)
+    def insert(Self):
+        pass
+    def upadte(Self):
+        pass 
+    def delete(self):
+        pass
+    def find(self,id):
+        pass
+
+obj = CRUD() 
+obj.show()   
+
+
+
